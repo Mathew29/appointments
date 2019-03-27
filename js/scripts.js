@@ -1,16 +1,18 @@
-// $(document).ready(function() {
-//   $("#contactForm").submit(function(event) {
-//     var nameInput = $("input#name").val();
-//     var streetInput = $("input#street").val();
-//     var cityInput = $("input#cityState").val();
-//     var zipInput = $("input#zip").val();
-//
-//     $(".name").text(nameInput);
-//     $(".street").text(streetInput);
-//     $(".cityState").text(cityInput);
-//     $(".zip").text(zipInput);
-//
-//     $("#letter").show();
-//     event.preventDefault();
-//   });
-// });
+$(document).ready(function() {
+  $("#appointmentForm").submit(function(event) {
+
+    var nameInput = $("input#name").val();
+    var describeInput = $("input#describe").val();
+    var dateInput = $("input#date").val();
+    var startInput = $("input#start").val();
+    var endInput = $("input#end").val();
+
+    $(".name").text(nameInput);
+    $(".describe").text(describeInput);
+    $(".date").text(dateInput);
+    $(".start").text(startInput);
+    $(".end").text(endInput);
+
+    event.preventDefault();
+  });
+});
