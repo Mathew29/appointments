@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title>Appointment Manager!!</title>
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <form id="appointmentForm">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="description">Describe your appointment</label>
-            <input type="text" id="description" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="date">Appointment date</label>
-            <input type="text" id="date" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="start">Start Time</label>
-            <input type="text" id="start" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="end">End Time</label>
-            <input type="text" id="end" class="form-control">
-          </div>
-          <button type="submit" class="btn-success" data-toggle="modal" data-target="#myModal">Submit your soul</button>
-          <!-- start modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Thanks!</h5>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="model-body">
-                  <p>Thank you for submitting your soul! It was delicious!</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>Appointment Manager!!</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="description">Describe your appointment</label>
+          <input type="text" id="description" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="date">Appointment date</label>
+          <input type="text" id="date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="start">Start Time</label>
+          <input type="text" id="start" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="end">End Time</label>
+          <input type="text" id="end" class="form-control">
+        </div>
+        <button type="submit" class="btn-success" data-toggle="modal" data-target="#myModal">Submit your soul</button>
+
+        <!-- start modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Thanks For Submitting</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Modal body..
+              </div>
+
+
             </div>
           </div>
-          <!-- End modal --> 
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
-  </body>
+  </div>
+</body>
 </html>

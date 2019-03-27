@@ -13,10 +13,9 @@ $(document).ready(function() {
     $(".start").text(startInput);
     $(".end").text(endInput);
 
-    $("myModal").on("shown.bs.modal", function() {
-      $("#appointmentForm").submit()
+    $("#appointmentForm").click(function() {
+      $("myModal").submit()
     });
     event.preventDefault();
   });
-
 });
