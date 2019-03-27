@@ -32,11 +32,26 @@
             <label for="end">End Time</label>
             <input type="text" id="end" class="form-control">
           </div>
-          <button type="submit" class="btn-success"><a href="thanks.html" target="_blank">Submit your soul</a></button>
-
-
+          <button type="submit" class="btn-success" data-toggle="modal" data-target="#myModal">Submit your soul</button>
+          <!-- start modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Thanks!</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="model-body">
+                  <p>Thank you for submitting your soul! It was delicious!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal --> 
         </form>
-
       </div>
     </div>
   </body>
